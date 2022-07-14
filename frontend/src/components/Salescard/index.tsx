@@ -1,4 +1,5 @@
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton'
 import './style.css'
 
@@ -10,10 +11,20 @@ function Salescard() {
             </h2>
 
             <div className="dsmeta-form-control-container">
-                <input className="dsmeta-form-control" type="text" />
+                <DatePicker
+                    selected={new Date()}
+                    onChange={(date: Date) => { }}
+                    className="dsmeta-form-control"
+                    dateFormat="dd/MM/yyyy"
+                />
             </div>
             <div className="dsmeta-form-control-container">
-                <input className="dsmeta-form-control" type="text" />
+                <DatePicker
+                    selected={new Date()}
+                    onChange={(date: Date) => { }}
+                    className="dsmeta-form-control"
+                    dateFormat="dd/MM/yyyy"
+                />
             </div>
             <div>
                 <table className="dsmeta-sales-table">
@@ -52,9 +63,9 @@ function Salescard() {
                             <td>R$ 63.800,00</td>
                             <td>
                                 <div className="dsmeta-red-btn-container">
-                                    
-                                        <NotificationButton />
-                                    
+
+                                    <NotificationButton />
+
                                 </div>
                             </td>
                         </tr>
@@ -67,9 +78,9 @@ function Salescard() {
                             <td>R$ 49.890,00</td>
                             <td>
                                 <div className="dsmeta-red-btn-container">
-                                    
-                                        <NotificationButton />
-                                    
+
+                                    <NotificationButton />
+
                                 </div>
                             </td>
                         </tr>
