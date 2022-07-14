@@ -1,0 +1,100 @@
+.dsmeta-card {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+
+.dsmeta-sales-title {
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dsmeta-form-control {
+    width: 100%;
+    height: 46px;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9AAABE;
+    padding: 0 20px;
+    font-size: 18px;
+
+}
+
+.dsmeta-form-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+
+.dsmeta-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    /* a diretiva abaixo decide se uma célula da tabela 
+       terá as bordas juntas ou separadas              */
+    border-collapse: collapse;
+}
+
+.dsmeta-sales-table thead {
+    color: #E9E9E9;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dsmeta-sales-table tbody {
+    color: #CFCFCF;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dsmeta-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+/* Altera a cor da linha da tabela ao passar o mouse */
+.dsmeta-sales-table tbody tr:hover>td {
+    background-color: #384459;
+}
+
+/* Alterna a cor da linha da tabela */
+.dsmeta-sales-table tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+
+.dsmeta-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Para que a coluna DATA só apareça quando a largura for aumentada 
+   para 576px devemos criar uma classe para controlar como abaixo */
+
+.dsmeta-showcolumn-higher-576px {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .dsmeta-showcolumn-higher-576px {
+        display: table-cell
+    }
+}
+
+/* Para que a coluna DATA só apareça quando a largura for aumentada 
+   para 992px devemos criar uma classe para controlar como abaixo */
+
+.dsmeta-showcolumn-higher-992px {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .dsmeta-showcolumn-higher-992px {
+        display: table-cell
+    }
+}
